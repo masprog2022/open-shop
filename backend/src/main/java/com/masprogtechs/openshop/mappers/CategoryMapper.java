@@ -1,4 +1,4 @@
-package com.masprogtechs.openshop.mapper;
+package com.masprogtechs.openshop.mappers;
 
 import com.masprogtechs.openshop.dtos.category.CategoryRequestDTO;
 import com.masprogtechs.openshop.dtos.category.CategoryResponseDTO;

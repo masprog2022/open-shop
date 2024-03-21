@@ -1,9 +1,9 @@
-package com.masprogtechs.openshop.dtos;
+package com.masprogtechs.openshop.dtos.category;
 
 import lombok.Data;
 
 @Data
-public class CategoryDTO {
+public class CategoryRequestDTO {
 
     private String name;
 }

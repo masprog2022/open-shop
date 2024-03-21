@@ -1,7 +1,10 @@
-package com.masprogtechs.openshop.model;
+package com.masprogtechs.openshop.models;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.time.LocalDateTime;
 
 
 @Entity
@@ -10,6 +13,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 public class Category {
 
     @Id
@@ -18,4 +22,9 @@ public class Category {
 
     @Column
     private String name;
+
+    @Column(name = "created_At")
+    private LocalDateTime createdAt;
+
+
 }
